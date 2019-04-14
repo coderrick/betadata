@@ -1,0 +1,30 @@
+
+{% extends "bootstrap/base.html" %}
+{% block title %}Seeker: Upload{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+  <!-- ... -->
+</div>
+{% endblock %}
+
+{% block content %}
+  <form class="md-form" action="#">
+    <div class="file-field big-2">
+      <div class="btn btn-cyan btn-lg float-left">
+        <span>Choose video to upload</span>
+        <input type="file" multiple>
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="file" id="file_input" name="file_input" placeholder="Upload one or more files">
+      </div>
+    </div>
+  </form>
+{% endblock %}
+
+
+
+
+
+
+

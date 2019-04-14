@@ -1,0 +1,19 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Seeker: Labeling results{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+  <!-- ... -->
+</div>
+{% endblock %}
+
+{% block content %}
+  <h3>Processing results</h3>
+  {% if results %}
+    <ul>
+    {% for result in results %}
+        <li> Found {{ result.label_description }} at {{ result.start_time }} up to {{ result.stop_time }}</li>
+    {% endfor %}
+    </ul>
+   {% endif %}
+{% endblock %}
